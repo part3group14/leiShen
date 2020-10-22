@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import SearchHeader from './goods/SearchHeader'
-import SearchMain from './goods/SearchMain'
+import SearchHeader from './search/SearchHeader'
+import SearchMain from './search/SearchMain'
 
 export default {
     components: {

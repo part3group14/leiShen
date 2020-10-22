@@ -255,7 +255,7 @@
 </template>
 
 <script>
-import '../assets/css/swiper.css'
+import '../../assets/css/swiper.css'
 import Swiper from "swiper";
 export default {
     name: "Banner",

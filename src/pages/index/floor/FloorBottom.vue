@@ -7,22 +7,22 @@
         <ul>
             <li>
                 <a>
-                    <img src="../../../public/images/dibu1.png" alt="">
+                    <img src="../../../../public/images/dibu1.png" alt="">
                 </a>
             </li>
             <li>
                 <a>
-                    <img src="../../../public/images/dibu2.png">
+                    <img src="../../../../public/images/dibu2.png">
                 </a>
             </li>
             <li>
                 <a>
-                    <img src="../../../public/images/dingbu3.png">
+                    <img src="../../../../public/images/dingbu3.png">
                 </a>
             </li>
             <li>
                 <a>
-                    <img src="../../../public/images/dibu4.png">
+                    <img src="../../../../public/images/dibu4.png">
                 </a>
             </li>
         </ul>

@@ -54,6 +54,7 @@
 }
 
 .bottom-menu ul li a {
+    color: #333;
     display: flex;
     flex-direction: column;
     height: 100%;

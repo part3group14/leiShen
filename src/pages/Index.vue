@@ -3,7 +3,7 @@
     <IndexHeader></IndexHeader>
     <IndexBanner></IndexBanner>
     <IndedxListNav></IndedxListNav>
-    <IndexPublic></IndexPublic>
+    <IndexUpSwiper></IndexUpSwiper>
     <IndexTwoSec></IndexTwoSec>
     <IndexFloor></IndexFloor>
     <IndexFooter></IndexFooter>
@@ -11,19 +11,19 @@
 </template>
 
 <script>
-import IndexHeader from '../components/IndexHeader'
-import IndexBanner from '../components/IndexBanner'
-import IndedxListNav from '../components/IndedxListNav'
-import IndexPublic from '../components/IndexPublic'
-import IndexTwoSec from '../components/IndexTwoSec'
-import IndexFloor from '../components/IndexFloor'
-import IndexFooter from '../components/IndexFooter'
+import IndexHeader from './index/IndexHeader'
+import IndexBanner from './index/IndexBanner'
+import IndedxListNav from './index/IndedxListNav'
+import IndexUpSwiper from '../components/IndexUpSwiper'
+import IndexTwoSec from './index/IndexTwoSec'
+import IndexFloor from './index/IndexFloor'
+import IndexFooter from './index/IndexFooter'
 export default {
     components: {
         IndexHeader,
         IndexBanner,
         IndedxListNav,
-        IndexPublic,
+        IndexUpSwiper,
         IndexTwoSec,
         IndexFloor,
         IndexFooter

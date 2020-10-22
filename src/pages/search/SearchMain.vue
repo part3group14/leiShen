@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import GoodsItem from '@/components/GoodsItem'
+import GoodsItem from '../../components/GoodsItem'
 import axios from 'axios'
 import BScroll from 'better-scroll'
 export default {

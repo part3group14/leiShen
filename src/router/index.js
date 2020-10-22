@@ -5,6 +5,7 @@ import Index from '../pages/Index'
 import Search from '../pages/Search'
 import OldChange from '../pages/OldChange'
 
+
 Vue.use(Router)
 
 

@@ -1,7 +1,7 @@
 <template>
 <div class="control-search">
     <div class="control-search-input">
-        <a class="logo_wap"><img src="../../public/images/logonew.png"> </a>
+        <a class="logo_wap"><img src="../../../public/images/logonew.png"> </a>
         <input type="text" class="search-input custom-search-input ns-text-color-gray" placeholder="请输入要搜索的商品">
         <router-link to="/Search">
             <button type="button" class="search-button custom-search-button ns-border-color-gray">搜索</button>
@@ -44,7 +44,7 @@
     border: none;
     font-size: 14px;
     text-indent: -9999px;
-    background: url(../../public/images/index_search.png) center no-repeat;
+    background: url(../../../public/images/index_search.png) center no-repeat;
     background-size: 14px 14px;
     border-left: 1px solid;
     right: 13%;
