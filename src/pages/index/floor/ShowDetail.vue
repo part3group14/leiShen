@@ -3,33 +3,33 @@
     <div class="category-name">
         <div class="floor-list-title w100_width">
 
-            <span class="floor-left-nav ns-text-color-black fl">911Pro系列</span>
+            <span class="floor-left-nav ns-text-color-black fl">{{items.title}}</span>
             <a class="assemble-title-right">更多&nbsp;&gt;</a>
         </div>
     </div>
     <div class="w100">
         <a>
-            <img src="https://cdn.leishen.cn/upload/config/2020041601495795034.jpg">
+            <img :src="items.showImg">
         </a>
     </div>
     <div class="members-goods-pic ns-border-color-gray">
         <ul>
-            <li class="gooditem">
+            <li class="gooditem" v-for="(content,index) in items.content" :key="index">
                 <div class="imgs">
-                    <a href="https://m.leishen.cn/item/958.html">
-                        <img src="https://cdn.leishen.cn/upload/goods/2020080504572001455_SMALL.jpg">
+                    <a>
+                        <img :src="content.goodImg">
                     </a>
                 </div>
                 <div class="info">
                     <p class="goods-title">
-                        <a class="ns-text-color-black">雷神911P1-PLUS极夜高端旗舰游戏本</a>
+                        <a class="ns-text-color-black">{{content.goodsTit}}</a>
                     </p>
                     <p class="goods-des">
-                        <a class="ns-text-color-black">芯10代I7-10875H处理器，32G内存，2T固态，RTX2070 Max-Q独显，300HZ电竞屏，RGB背光键盘，窄边框。</a>
+                        <a class="ns-text-color-black">{{content.goodsDec}}</a>
                     </p>
                     <div class="goods-info">
                         <span class="goods-price ns-text-color">
-                            <em>￥14999</em>
+                            <em>￥{{content.goodsPirce}}</em>
                         </span>
                     </div>
                 </div>
@@ -38,6 +38,14 @@
     </div>
 </div>
 </template>
+
+<script>
+export default {
+    props: {
+        items: Object
+    }
+}
+</script>
 
 <style scoped>
 .category-name {

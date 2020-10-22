@@ -3,8 +3,8 @@
     <div class="search-container ns-text-color-gray">
         <div class="classify head-btn" @click="fn()"><i class="iconfont icon-liebiao-copy"></i>分类</div>
         <div class="search-tab ns-bg-color-gray-fadeout-60">
-            <i class="iconfont icon-fangdajing"></i>
-            <input type="text" class="search" placeholder="请输入您要搜索的商品">
+            <i class="iconfont icon-fangdajing" @click="searchInfo()"></i>
+            <input type="text" class="search" placeholder="请输入您要搜索的商品" v-model="searchMsg">
         </div>
         <div class="head-btn search-list"><i class="iconfont icon-liebiao"></i>列表</div>
     </div>
@@ -30,10 +30,13 @@
 
 <script>
 import SearchSubNav from './SearchSubNav';
+import axios from "axios"
 export default {
     data() {
         return {
-            isShow: false
+            searchMsg: "",
+            isShow: false,
+            goodsList: []
         }
     },
     components: {
@@ -42,6 +45,17 @@ export default {
     methods: {
         fn() {
             this.isShow = !this.isShow;
+        },
+        async searchInfo() {
+            console.log(this.searchMsg)
+            let res = await axios({
+                url: "goods",
+                methods: "get",
+                params: {
+                    type: this.searchMsg
+                }
+            })
+            console.log(res.data)
         }
     },
 }

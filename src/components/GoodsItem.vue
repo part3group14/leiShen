@@ -2,11 +2,11 @@
 <li class="list-item ns-border-color-gray">
     <div class="product-img">
         <a href="#">
-            <img src="../../public/images/1.png">
+            <img :src="goods.img">
         </a>
     </div>
     <div class="list-right"><a class="pd-title pr" href="#"><span>{{goods.name}}</span></a>
-        <div class="pd-price"><i class="ns-text-color">￥1111</i></div>
+        <div class="pd-price"><i class="ns-text-color">￥{{goods.price}}</i></div>
         <div class="pd-main cleart">
             <div class="ns-text-color-gray"><i>{{goods.payNum}}</i><span>人付款</span></div>
         </div>

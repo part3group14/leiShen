@@ -1,6 +1,6 @@
 <template>
 <div>
-    <ShowDetail></ShowDetail>
+    <ShowDetail v-for="(items,index) in goodsShow" :key="index" :items="items"></ShowDetail>
     <Fans></Fans>
     <VideoList></VideoList>
     <FloorBottom></FloorBottom>
@@ -12,7 +12,7 @@ import ShowDetail from './floor/ShowDetail'
 import Fans from './floor/Fans'
 import VideoList from './floor/VideoList'
 import FloorBottom from './floor/FloorBottom'
-// import axios from 'axios'
+import axios from 'axios'
 export default {
     components: {
         ShowDetail,
@@ -20,19 +20,18 @@ export default {
         VideoList,
         FloorBottom
     },
-    // data() {
-    //     return {
-    //         goods: [],
-    //     }
-    // },
-    // async mounted() {
-    //     let res = await axios({
-    //         url: "IndexFloorCon",
-    //         methods: "get"
-    //     })
-    //     console.log(res.data)
-    //     this.goods = res.data
-    // },
+    data() {
+        return {
+            goodsShow: [],
+        }
+    },
+    async mounted() {
+        let res = await axios({
+            url: "IndexFloorCon",
+            methods: "get"
+        })
+        this.goodsShow = res.data
+    },
 }
 </script>
 

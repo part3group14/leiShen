@@ -46,7 +46,6 @@ export default {
     height: 570px;
     position: relative;
     z-index: -10;
-    overflow: hidden;
 }
 
 .list-content {
